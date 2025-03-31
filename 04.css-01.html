@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>css页面设置</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        h1{
+            background-image: url('九宫格/贤者.jpg');
+            background-position: 50% 50%;
+            background-repeat:no-repeat;
+            text-align:center;
+        }
+    </style>
+</head>     
+<body>
+    <h1>css核心概念</h1>
+    <section>
+        <h2>盒模型</h2>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: dashed greenyellow 2px;
+            padding:30px;
+            margin-bottom:5em;
+        }
+        </style>
+        </section>
+    <section>
+        <h2>布局</h2>
+        <div>
+            <h3>display的不同取值</h3>
+            </div>
+        <div class="display-demo">
+            <style>
+            .display-demo p{
+                width: 200px;
+                display: inline;
+
+            }
+            </style>
+
+<div>
+                <div class="display-demo">
+                    <p>段落1</p>
+                    <p>段落2</p>
+                    <p>段落3</p>
+                </div>
+                <div class="flex-container">
+                    <p>Flex Item 1</p>
+                    <p>Flex Item 2</p>
+                  
+            
+    
+    </section>
+<section>
+    <h2>动画</h2>
+    动画必须有起始状态、结束状态、时长
+    <style>
+        .animate-box{
+            width:200px;
+            height:200px;
+            background-color: aquamarine;
+            line-height: 100px;
+        }
+        .animate-box:hover{
+            border-radius: 100px;
+            color:aliceblue;
+            background-color:blue;
+            transition:all 0.2s;
+            
+        }
+    </style>
+</section>
+</html>
