@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>css页面设置</title>
+    <style>
+        body{
+            /* 修改背景颜色 */
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1{
+            background-image: url('九宫格/贤者.jpg');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            /* 添加盒阴影 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        /* 盒模型样式 */
+        .box{
+            width: 200px;
+            height: 200px;
+            border: dashed greenyellow 2px;
+            padding: 30px;
+            margin-bottom: 5em;
+            /* 添加背景颜色 */
+            background-color: white;
+            /* 添加过渡效果 */
+            transition: all 0.3s;
+        }
+        /* 鼠标悬停时盒模型样式变化 */
+        .box:hover{
+            transform: scale(1.1);
+        }
+        /* display示例样式 */
+        .display-demo p{
+            width: 200px;
+            display: inline;
+        }
+        /* Flexbox布局样式 */
+        .flex-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .flex-container p{
+            background-color: lightcoral;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* 动画样式 */
+        .animate-box{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            line-height: 100px;
+            text-align: center;
+            /* 定义动画 */
+            animation: colorChange 3s infinite alternate;
+        }
+        @keyframes colorChange {
+            from {
+                background-color: aquamarine;
+            }
+            to {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>     
+<body>
+    <h1>css核心概念</h1>
+    <section>
+        <h2>盒模型</h2>
+        <div class="box">这是一个盒模型示例</div>
+    </section>
+    <section>
+        <h2>布局</h2>
+        <div>
+            <h3>display的不同取值</h3>
+        </div>
+        <div class="display-demo">
+            <p>段落1</p>
+            <p>段落2</p>
+            <p>段落3</p>
+        </div>
+        <div class="flex-container">
+            <p>Flex Item 1</p>
+            <p>Flex Item 2</p>
+        </div>
+    </section>
+    <section>
+        <h2>动画</h2>
+        <div class="animate-box">这是一个动画示例</div>
+    </section>
+</body>
+</html>
